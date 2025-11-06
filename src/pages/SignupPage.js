@@ -14,7 +14,7 @@ function SignupPage() {
     if (password !== confirm) return alert("Passwords do not match!");
     try {
       await createUserWithEmailAndPassword(auth, email, password);
-      alert("Account created!");
+      alert("Account created successfully!");
       navigate("/login");
     } catch (err) {
       alert(err.message);
@@ -23,7 +23,7 @@ function SignupPage() {
 
   return (
     <div className="auth-container glass">
-      <h2>Create Account</h2>
+      <h2>Sign Up</h2>
       <form onSubmit={handleSignup}>
         <input type="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)} required />
         <input type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)} required />
@@ -36,5 +36,6 @@ function SignupPage() {
 }
 
 export default SignupPage;
+
 
 
