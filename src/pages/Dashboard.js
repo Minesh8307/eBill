@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 
 export default function Dashboard() {
   return (
-    <div className="glass">
+    // Added 'dashboard-page' class for centering
+    <div className="dashboard-page glass"> 
       <h2>Dashboard</h2>
       <div className="home-buttons">
         <Link to="/sell" className="btn-primary">Sell</Link>
@@ -12,5 +13,4 @@ export default function Dashboard() {
     </div>
   );
 }
-
 
