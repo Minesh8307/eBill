@@ -6,8 +6,7 @@ function Homepage() {
     <div className="homepage">
       <div className="intro-card glass">
         <h1>Welcome to <span className="highlight">eBILL</span></h1>
-        <p>Your Smart Online Billing & Inventory Management System.</p>
-        <p>Manage your business effortlessly — from inventory to instant billing.</p>
+        <p>Smart online billing and inventory management made simple.</p>
         <Link to="/login" className="btn-primary">Login</Link>
       </div>
     </div>
