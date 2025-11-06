@@ -12,7 +12,6 @@ function LoginPage() {
     e.preventDefault();
     try {
       await signInWithEmailAndPassword(auth, email, password);
-      alert("Login successful!");
       navigate("/dashboard");
     } catch (err) {
       alert(err.message);
@@ -27,11 +26,12 @@ function LoginPage() {
         <input type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)} required />
         <button className="btn-primary">Login</button>
       </form>
-      <p>New User? <Link to="/signup">Create Account</Link></p>
+      <p>New user? <Link to="/signup">Create account</Link></p>
     </div>
   );
 }
 
 export default LoginPage;
+
 
 
