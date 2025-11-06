@@ -83,7 +83,5 @@ Each bill displays:
 | **Hosting** | Firebase Hosting / GitHub Pages |
 | **Version Control** | Git & GitHub |
 
----
-
 ## 📁 Folder Structure
 
