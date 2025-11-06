@@ -1,117 +1,45 @@
-/* 🌈 Global body background */
-body {
-  margin: 0;
-  font-family: "Poppins", sans-serif;
-  background: linear-gradient(135deg, #e0f2fe, #dbeafe);
-  min-height: 100vh;
-  color: #111827;
+/* 📦 Inventory Page */
+.inventory-form {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
-/* 🪞 Glass-style card (used in Homepage, Login, etc.) */
-.glass {
-  background: rgba(255, 255, 255, 0.4);
-  backdrop-filter: blur(15px);
-  border-radius: 20px;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
-  padding: 2rem;
-  max-width: 600px;
-  margin: 4rem auto;
+.inventory-form input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  width: 150px;
+  outline: none;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.table th,
+.table td {
+  border: 1px solid #e2e8f0;
+  padding: 8px;
   text-align: center;
 }
 
-/* 🔹 Navbar */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(10px);
-  padding: 1rem 2rem;
-  position: sticky;
-  top: 0;
-  z-index: 10;
+.table th {
+  background-color: #eff6ff;
 }
 
-.logo {
-  font-weight: 700;
-  font-size: 1.3rem;
-  color: #1e40af;
-}
-
-.nav-links a {
-  margin: 0 10px;
-  text-decoration: none;
-  color: #1f2937;
-  font-weight: 500;
-}
-
-.logout-btn {
+.delete-btn {
   background: #ef4444;
-  color: #fff;
+  color: white;
   border: none;
-  padding: 6px 12px;
   border-radius: 6px;
   cursor: pointer;
+  padding: 5px 10px;
 }
-
-/* 🏠 Homepage styles */
-.homepage {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 80vh;
-}
-
-.homepage h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-  color: #1e3a8a;
-}
-
-.highlight {
-  color: #3b82f6;
-}
-
-.homepage p {
-  font-size: 1.1rem;
-  margin-bottom: 25px;
-  color: #334155;
-}
-
-/* Buttons on homepage */
-.home-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-}
-
-.btn-primary,
-.btn-green {
-  display: inline-block;
-  margin: 10px;
-  padding: 12px 25px;
-  border-radius: 12px;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-  transition: all 0.3s ease;
-}
-
-.btn-primary {
-  background: #3b82f6;
-}
-
-.btn-green {
-  background: #22c55e;
-}
-
-.btn-primary:hover {
-  background: #2563eb;
-  transform: scale(1.05);
-}
-
-.btn-green:hover {
-  background: #16a34a;
-  transform: scale(1.05);
+.delete-btn:hover {
+  background: #dc2626;
 }
